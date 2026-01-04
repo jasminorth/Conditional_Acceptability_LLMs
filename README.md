@@ -1,5 +1,5 @@
 # *If Probable, Then Accept? Understanding Conditional Acceptability in Large Language Models and Humans*
-***Bachelor's Thesis***
+***Bachelor's Thesis // Project***
 
 | Student: | Jasmin Orth |
 | ----------- | ----------- |
