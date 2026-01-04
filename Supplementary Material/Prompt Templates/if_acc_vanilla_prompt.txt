@@ -1,0 +1,15 @@
+### Instruction:
+
+If a statement is considered "acceptable", it means that the information expressed by it is reasonable given some context or prior knowledge about the world.
+
+Rate the acceptability of the following statement. Your answer must be a single number between 0 and 100, where:
+- 0 means "completely unacceptable"
+- 100 means "highly acceptable"
+
+Respond only with this number and nothing else.
+
+### Output Format:
+
+Answer: <number>
+
+### Input:

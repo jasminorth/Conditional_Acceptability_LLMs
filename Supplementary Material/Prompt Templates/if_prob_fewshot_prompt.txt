@@ -1,0 +1,32 @@
+### Instruction:
+
+Rate the probability of the following statement. Your answer must be a single number between 0 and 100, where:
+- 0 means "completely improbable"
+- 100 means "highly probable"
+
+Respond only with this number and nothing else.
+
+### Output Format:
+
+Answer: <number>
+
+### Examples:
+
+{example_context}
+
+Example 1 (High probability):
+
+Statement: If Luisa drives to a bigger supermarket, she will find all the ingredients she needs.
+Answer: 92
+
+Example 2 (Moderate probability):
+
+Statement: If Luisa drives to the small supermarket, she will find all the ingredients she needs.
+Answer: 57
+
+Example 3 (Low probability):
+
+Statement: If Luisa goes straight home, she will find all the ingredients she needs.
+Answer: 12
+
+### Input:

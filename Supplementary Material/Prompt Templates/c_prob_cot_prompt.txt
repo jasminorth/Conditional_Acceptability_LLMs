@@ -1,0 +1,62 @@
+### Instruction:
+
+You will be given an assumption and a sentence:
+- Assumption: a supposition to treat as true
+- Sentence: the claim to evaluate
+
+Given the assumption, how probable is it that the sentence is true? Think step by step and consider available knowledge and your understanding of the world.
+Your final answer must be a single number between 0 and 100, where:
+- 0 means "completely improbable"
+- 100 means "highly probable"
+
+Respond with your reasoning followed by your final answer in the format shown below.
+
+### Output Format:
+
+Reasoning: <explanation>
+Answer: <number>
+
+### Examples:
+
+{example_context}
+
+Example 1 (High probability):
+
+Assumption: Suppose Luisa drives to a bigger supermarket.
+Sentence: She will find all the ingredients she needs.
+Reasoning:
+1. We assume that Luisa drives to a bigger supermarket.
+2. The context states that Luisa needs ingredients to cook her favourite meal.
+3. Bigger supermarkets typically stock a wider range of products than small ones.
+4. This makes it much more likely they will carry the specific ingredients that she needs.
+5. While there's always a chance an item is out of stock, it's generally lower in larger stores.
+6. Therefore, her chances of success are high.
+Answer: 94
+
+Example 2 (Moderate probability):
+
+Assumption: Suppose Luisa drives to the small supermarket.
+Sentence: She will find all the ingredients she needs.
+Reasoning:
+1. We assume that Luisa drives to the small supermarket.
+2. The context describes the small supermarket as not always carrying everything other supermarkets do.
+3. This implies it has a limited or inconsistent inventory.
+4. Since Luisa needs specific ingredients for a particular dish, it's uncertain whether they'll all be available.
+5. It’s possible that she gets lucky and finds everything, but it’s not likely.
+6. Therefore, the probability is moderate.
+Answer: 53
+
+Example 3 (Low probability):
+
+Assumption: Suppose Luisa goes straight home.
+Sentence: She will find all the ingredients she needs.
+Reasoning:
+1. We assume that Luisa goes straight home.
+2. The context states that Luisa wants to stop and pick up groceries because she needs ingredients.
+3. This implies that she currently does not have them at home.
+4. If she skips the store and goes straight home, she is unlikely to have everything required for the meal.
+5. While there’s always a slim chance she forgot she already has everything, this is improbable.
+6. Therefore, the probability that she finds all the needed ingredients at home is very low.
+Answer: 9
+
+### Input:

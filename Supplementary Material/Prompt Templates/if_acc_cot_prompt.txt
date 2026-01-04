@@ -1,0 +1,54 @@
+### Instruction:
+
+If a statement is considered "acceptable", it means that the information expressed by it is reasonable given some context or prior knowledge about the world.
+
+Rate the acceptability of the following statement. Think step by step and consider available knowledge and your understanding of the world.
+Your final answer must be a single number between 0 and 100, where:
+- 0 means "completely unacceptable"
+- 100 means "highly acceptable"
+
+Respond with your reasoning followed by your final answer in the format shown below.
+
+### Output Format:
+
+Reasoning: <explanation>
+Answer: <number>
+
+### Examples:
+
+{example_context}
+
+Example 1 (High acceptability):
+
+Statement: If Luisa drives to a bigger supermarket, she will find all the ingredients she needs.
+Reasoning:
+1. The context tells us that Luisa is looking for specific ingredients to cook her favorite meal.
+2. Bigger supermarkets are generally well-stocked and carry a wider variety of products.
+3. It is reasonable to expect that she will find the necessary items there.
+4. Although there's a small chance that something might be out of stock, this doesn't undermine the general plausibility.
+5. Therefore, the statement expresses a reasonable and plausible scenario.
+Answer: 95
+
+Example 2 (Moderate acceptability):
+
+Statement: If Luisa drives to the small supermarket, she will find all the ingredients she needs.
+Reasoning:
+1. The context tells us that the small supermarket does not always carry everything other supermarkets do.
+2. This implies that its inventory is limited or inconsistent.
+3. This makes it uncertain whether it has the full range of ingredients she needs.
+4. While the statement is not impossible, it’s not strongly supported by what we know.
+5. Therefore, the statement is somewhat acceptable, but questionable.
+Answer: 51
+
+Example 3 (Low acceptability):
+
+Statement: If Luisa goes straight home, she will find all the ingredients she needs.
+Reasoning:
+1. The context tells us that Luisa wants to stop for groceries because she needs ingredients, implying that she does not already have the ingredients at home.
+2. If she skips the store and goes straight home, she is unlikely to have everything required for the meal.
+3. The statement contradicts her reason for going to the store in the first place.
+4. While there’s always a slim chance she forgot she already has everything, this is implausible.
+5. Therefore, the statement is largely unacceptable.
+Answer: 8
+
+### Input:

@@ -1,0 +1,42 @@
+### Instruction:
+
+You will be given an assumption and a sentence:
+- Assumption: a supposition to treat as true
+- Sentence: the claim to evaluate
+
+Given the assumption, how probable is it that the sentence is true? Your answer must be a single number between 0 and 100, where:
+- 0 means "completely improbable"
+- 100 means "highly probable"
+
+Respond only with this number and nothing else.
+
+### Output Format:
+
+Answer: <number>
+
+### Examples:
+
+{example_context}
+
+Example 1 (High probability):
+
+Assumption: Suppose Luisa drives to a bigger supermarket.
+Sentence: She will find all the ingredients she needs.
+Answer: 94
+
+Example 2 (Moderate probability):
+
+Assumption: Suppose Luisa drives to the small supermarket.
+Sentence: She will find all the ingredients she needs.
+Answer: 53
+
+Example 3 (Low probability):
+
+Assumption: Suppose Luisa goes straight home.
+Sentence: She will find all the ingredients she needs.
+Answer: 9
+
+### Input:
+
+
+
