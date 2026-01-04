@@ -30,11 +30,12 @@
 3. `03_analysis.R`
     + Runs statistical analysis using linear mixed-effects models
 
-4. todo
+4. `04_additional_analyses.ipynb`
+    + Performs additional analyses using correlation measures (rating consistency, sentence probability, perplexity)
 
 <br>
 
-> Notebooks should be executed in sequence: `01 → 02 → 03`.
+> Notebooks should be executed in sequence: `01 → 02 → 03`. Notebook `04` is optional.
 
 <br>
 
@@ -118,5 +119,3 @@ This script performs statistical analysis of the processed judgement data using 
 Outputs include model summaries, interaction plots, and tables.
 
 <br>
-
-## Notebook 4: todo
