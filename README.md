@@ -25,7 +25,7 @@
     + Constructs and executes prompts for querying LLMs
 
 2. `02_data_processing.ipynb`
-    + Loads and processes judgement data from both humans and LLMs
+    + Loads and processes judgment data from both humans and LLMs
 
 3. `03_analysis.R`
     + Runs statistical analysis using linear mixed-effects models
@@ -45,7 +45,7 @@
 |---|---|
 | `statements.jsonl` | Main dataset (conditional statements and metadata) |
 | `{metric}_{style}_prompt.txt` | Prompt templates for LLMs |
-| `dat_finaldw1.csv`, `dat_finaldw2.csv` | Human judgement data (from Skovgaard-Olsen et al. (2016), [OSF](https://osf.io/7axdv/files/osfstorage))|
+| `dat_finaldw1.csv`, `dat_finaldw2.csv` | Human judgment data (from Skovgaard-Olsen et al. (2016), [OSF](https://osf.io/7axdv/files/osfstorage))|
 | `example_context.txt` | Optional context for prompting |
 
 
@@ -89,12 +89,12 @@ Prompt format, style (e.g., *vanilla*, *few-shot*, *chain-of-thought*), and othe
 | ----------- | ----------- |
 | **Language:** | Python |
 | **Prerequisites:** | - |
-| **Input:** | Dataset (`statements.jsonl`), human judgement files (`dat_finaldw1.csv`, `dat_finaldw2.csv`), LLM outputs from Notebook 1 |
+| **Input:** | Dataset (`statements.jsonl`), human judgment files (`dat_finaldw1.csv`, `dat_finaldw2.csv`), LLM outputs from Notebook 1 |
 | **Output:** | `.csv` files containing processed human and model data |
 
 ### Summary
 
-This notebook loads, processes, and harmonizes human and LLM judgement data for analysis. It extracts numerical values from raw CSV and JSONL files, aligns them with shared metadata from the statement dataset, and outputs two structured dataframes: one for human judgements and one for model-generated outputs.
+This notebook loads, processes, and harmonizes human and LLM judgment data for analysis. It extracts numerical values from raw CSV and JSONL files, aligns them with shared metadata from the statement dataset, and outputs two structured dataframes: one for human judgments and one for model-generated outputs.
 
 > Including both processing pipelines in a single notebook ensures consistency in format and structure, simplifies comparison, and enhances transparency.
 
@@ -110,10 +110,10 @@ This notebook loads, processes, and harmonizes human and LLM judgement data for 
 
 ### Summary
 
-This script performs statistical analysis of the processed judgement data using linear mixed-effects models (`lme4`, `emmeans`, etc.). It examines:
+This script performs statistical analysis of the processed judgment data using linear mixed-effects models (`lme4`, `emmeans`, etc.). It examines:
 
-- Relationships between conditional probability and *If A, then B* judgements
-- Interaction effects between source (human vs LLM), relation type, and judgement type
+- Relationships between conditional probability and *If A, then B* judgments
+- Interaction effects between source (human vs LLM), relation type, and judgment type
 - Differences across prompt styles or specific LLMs
 
 Outputs include model summaries, interaction plots, and tables.
